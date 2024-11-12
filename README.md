@@ -8,11 +8,22 @@ Steps to run:
 6) run mvn exec:java
 7) now the CLI should be running
 
-To use the CLI
-    Commands available are getMostRecentCookie
-        The following format should be used to get most recent cookies out of a csv file - 
-        getMostRecentCookie -f pathToFile/filename.csv -d 2018-09-12
-        to test the application you can use getMostRecentCookie -f src/main/resources/test.csv -d 2018-09-12 and you should expect 
-        to see asd1, asd2, asd3 printed in your terminal on separate lines.
+## Using the CLI
 
-        The getMostRecentCookie command will process a csv file and return the most active cookie for a specific day.
+### Available Commands
+- **getMostRecentCookie**
+
+### Command Format
+To retrieve the most recent cookies from a CSV file, use the following format:
+getMostRecentCookie -f pathToFile/filename.csv -d YYYY-MM-DD
+
+
+### Testing the Application
+To test the application, you can run: 
+getMostRecentCookie -f src/main/resources/test.csv -d 2018-09-12
+
+You should expect to see the following output printed in your terminal, each on a separate line:
+asd1 asd2 asd3
+
+### Description
+The `getMostRecentCookie` command processes a CSV file and returns the most active cookie for a specified day.
